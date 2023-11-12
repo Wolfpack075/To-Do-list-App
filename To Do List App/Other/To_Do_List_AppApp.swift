@@ -4,16 +4,20 @@
 //
 //  Created by Shoumik Barman Polok on 11/11/23.
 //
-
+import FirebaseCore
 import SwiftUI
 
 @main
 struct To_Do_List_AppApp: App {
     let persistenceController = PersistenceController.shared
+    
+    init() {
+        FirebaseApp.configure()
+    }
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
