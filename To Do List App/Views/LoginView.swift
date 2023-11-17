@@ -2,7 +2,7 @@
 //  LoginView.swift
 //  To Do List App
 //
-//  Created by Shoumik Barman Polok on 11/11/23.
+//  Created by Kazi Fahim Tahmid on 11/11/23.
 //
 
 import SwiftUI
@@ -14,25 +14,23 @@ struct LoginView: View {
         NavigationView {
             VStack {
                 // Header
-                HeaderView()
+                HeaderView(title: "To Do List", subtitle: "Get things done", angle: 15, background: .pink)
                 // Login Form
                 Form {
                     TextField("Email Address", text: $email)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .textFieldStyle(DefaultTextFieldStyle())
                     SecureField("Enter Password", text: $password)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                    Button {
-                        // Attempt log in
-                    } label: {
-                        ZStack {
-                            RoundedRectangle(cornerRadius: 10)
-                                .foregroundColor(Color.blue)
-                            Text("Login")
-                                .foregroundColor(Color.white)
-                                .bold()
-                        }
+                        .textFieldStyle(DefaultTextFieldStyle())
+                  
+                    TLButton(
+                        title: "Log In",
+                        background: .blue
+                    ) {
+                        //Attemp Log in
                     }
+//                    .padding()
                 }
+                .offset(y: -50)
                 // Create Account
                 VStack {
                     Text("New around here?")
