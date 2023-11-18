@@ -52,6 +52,7 @@
 		D2073E092AFFEB0200276049 /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2073E082AFFEB0200276049 /* RegisterViewViewModel.swift */; };
 		D2073E0B2AFFF3DB00276049 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2073E0A2AFFF3DB00276049 /* HeaderView.swift */; };
 		D22430C82B07066200D44351 /* TLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22430C72B07066200D44351 /* TLButton.swift */; };
+		D22430CA2B071B5800D44351 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22430C92B071B5800D44351 /* Extensions.swift */; };
 		D2E373A82AFFB2B100DD8DB0 /* To_Do_List_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E373A72AFFB2B100DD8DB0 /* To_Do_List_AppApp.swift */; };
 		D2E373AA2AFFB2B100DD8DB0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E373A92AFFB2B100DD8DB0 /* MainView.swift */; };
 		D2E373AC2AFFB2B400DD8DB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2E373AB2AFFB2B400DD8DB0 /* Assets.xcassets */; };
@@ -79,6 +80,7 @@
 		D2073E082AFFEB0200276049 /* RegisterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewViewModel.swift; sourceTree = "<group>"; };
 		D2073E0A2AFFF3DB00276049 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		D22430C72B07066200D44351 /* TLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLButton.swift; sourceTree = "<group>"; };
+		D22430C92B071B5800D44351 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D2E373A42AFFB2B100DD8DB0 /* To Do List App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To Do List App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2E373A72AFFB2B100DD8DB0 /* To_Do_List_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = To_Do_List_AppApp.swift; sourceTree = "<group>"; };
 		D2E373A92AFFB2B100DD8DB0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 			children = (
 				D2E373A72AFFB2B100DD8DB0 /* To_Do_List_AppApp.swift */,
 				D2073DE62AFFE46900276049 /* GoogleService-Info.plist */,
+				D22430C92B071B5800D44351 /* Extensions.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				D2073E032AFFEAC600276049 /* NewItemViewViewModel.swift in Sources */,
 				D2073E052AFFEADD00276049 /* LoginViewViewModel.swift in Sources */,
 				D2073DF52AFFE9A100276049 /* ToDoListView.swift in Sources */,
+				D22430CA2B071B5800D44351 /* Extensions.swift in Sources */,
 				D2E373AA2AFFB2B100DD8DB0 /* MainView.swift in Sources */,
 				D2073E012AFFEAB300276049 /* ToDoListItemViewViewModel.swift in Sources */,
 				D2073DED2AFFE8DF00276049 /* ProfileView.swift in Sources */,
