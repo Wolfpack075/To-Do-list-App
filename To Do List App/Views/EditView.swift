@@ -1,19 +1,23 @@
 //
-//  NewItemView.swift
+//  EditView.swift
 //  To Do List App
 //
-//  Created by Kazi Fahim Tahmid on 11/11/23.
+//  Created by Kazi Fahim Tahmid on 25/11/23.
 //
 
 import SwiftUI
 
-struct NewItemView: View {
-    @StateObject var viewModel = NewItemViewViewModel()
-    @Binding var newItemPresented: Bool
+struct EditView: View {
+    @StateObject var viewModel = EditViewViewModel()
+    var userId:String
+    
+    init(userId:String) {
+        self.userId = userId
+    }
     
     var body: some View {
         VStack {
-            Text("New Item")
+            Text("Edit Item")
                 .font(.system(size: 32))
                 .bold()
                 .padding(.top, 100)
@@ -30,11 +34,11 @@ struct NewItemView: View {
                 //Button
                 TLButton (title: "Save", background: .pink) {
                     if viewModel.canSave {
-                        viewModel.save()
-                        newItemPresented = false
+                        viewModel.save(userId:userId)
+//                        newItemPresented = false
                     }
                     else {
-                        viewModel.showAlert = true 
+                        viewModel.showAlert = true
                     }
                 }
                 .padding()
@@ -48,9 +52,5 @@ struct NewItemView: View {
 }
 
 #Preview {
-    NewItemView(newItemPresented: Binding(get: {
-        return true
-    }, set: { _ in
-        
-    }))
+    EditView(userId: "")
 }

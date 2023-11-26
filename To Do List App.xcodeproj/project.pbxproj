@@ -53,6 +53,8 @@
 		D2073E0B2AFFF3DB00276049 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2073E0A2AFFF3DB00276049 /* HeaderView.swift */; };
 		D22430C82B07066200D44351 /* TLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22430C72B07066200D44351 /* TLButton.swift */; };
 		D22430CA2B071B5800D44351 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22430C92B071B5800D44351 /* Extensions.swift */; };
+		D22A3F762B135C5600B30459 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22A3F752B135C5600B30459 /* EditView.swift */; };
+		D22A3F782B135C6B00B30459 /* EditViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22A3F772B135C6B00B30459 /* EditViewViewModel.swift */; };
 		D2E373A82AFFB2B100DD8DB0 /* To_Do_List_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E373A72AFFB2B100DD8DB0 /* To_Do_List_AppApp.swift */; };
 		D2E373AA2AFFB2B100DD8DB0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E373A92AFFB2B100DD8DB0 /* MainView.swift */; };
 		D2E373AC2AFFB2B400DD8DB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2E373AB2AFFB2B400DD8DB0 /* Assets.xcassets */; };
@@ -81,6 +83,8 @@
 		D2073E0A2AFFF3DB00276049 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		D22430C72B07066200D44351 /* TLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLButton.swift; sourceTree = "<group>"; };
 		D22430C92B071B5800D44351 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D22A3F752B135C5600B30459 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		D22A3F772B135C6B00B30459 /* EditViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewViewModel.swift; sourceTree = "<group>"; };
 		D2E373A42AFFB2B100DD8DB0 /* To Do List App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To Do List App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2E373A72AFFB2B100DD8DB0 /* To_Do_List_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = To_Do_List_AppApp.swift; sourceTree = "<group>"; };
 		D2E373A92AFFB2B100DD8DB0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -140,6 +144,7 @@
 				D2073DF62AFFE9B600276049 /* RegisterView.swift */,
 				D22430C72B07066200D44351 /* TLButton.swift */,
 				D2073E0A2AFFF3DB00276049 /* HeaderView.swift */,
+				D22A3F752B135C5600B30459 /* EditView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -154,6 +159,7 @@
 				D2073E042AFFEADD00276049 /* LoginViewViewModel.swift */,
 				D2073E062AFFEAF200276049 /* ToDoListViewViewModel.swift */,
 				D2073E082AFFEB0200276049 /* RegisterViewViewModel.swift */,
+				D22A3F772B135C6B00B30459 /* EditViewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -326,6 +332,7 @@
 				D2073DEF2AFFE90400276049 /* ToDoListItemView.swift in Sources */,
 				D2073DF12AFFE92400276049 /* NewItemView.swift in Sources */,
 				D2073E032AFFEAC600276049 /* NewItemViewViewModel.swift in Sources */,
+				D22A3F782B135C6B00B30459 /* EditViewViewModel.swift in Sources */,
 				D2073E052AFFEADD00276049 /* LoginViewViewModel.swift in Sources */,
 				D2073DF52AFFE9A100276049 /* ToDoListView.swift in Sources */,
 				D22430CA2B071B5800D44351 /* Extensions.swift in Sources */,
@@ -335,6 +342,7 @@
 				D2E373A82AFFB2B100DD8DB0 /* To_Do_List_AppApp.swift in Sources */,
 				D2073DFD2AFFEA6100276049 /* MainViewViewModel.swift in Sources */,
 				D2073E092AFFEB0200276049 /* RegisterViewViewModel.swift in Sources */,
+				D22A3F762B135C5600B30459 /* EditView.swift in Sources */,
 				D2073E072AFFEAF200276049 /* ToDoListViewViewModel.swift in Sources */,
 				D2073E0B2AFFF3DB00276049 /* HeaderView.swift in Sources */,
 				D2073DF32AFFE98C00276049 /* LoginView.swift in Sources */,

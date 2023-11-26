@@ -13,6 +13,7 @@ class RegisterViewViewModel : ObservableObject {
     @Published var name = ""
     @Published var email = ""
     @Published var password = ""
+    @Published var showAlert = false
     
     init() {}
     func register() {
@@ -41,13 +42,16 @@ class RegisterViewViewModel : ObservableObject {
         guard !name.trimmingCharacters(in: .whitespaces).isEmpty,
               !email.trimmingCharacters(in: .whitespaces).isEmpty,
               !password.trimmingCharacters(in: .whitespaces).isEmpty else {
+            showAlert = true
             return false
         }
         
         guard email.contains("@") && email.contains(".") else {
+            showAlert = true
             return false
         }
         guard password.count >= 6 else {
+            showAlert = true
             return false
         }
         return true

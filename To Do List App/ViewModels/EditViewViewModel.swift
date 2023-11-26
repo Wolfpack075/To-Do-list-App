@@ -1,22 +1,21 @@
 //
-//  NewItemViewViewModel.swift
+//  EditViewViewModel.swift
 //  To Do List App
 //
-//  Created by Kazi Fahim Tahmid on 11/11/23.
+//  Created by Kazi Fahim Tahmid on 25/11/23.
 //
 
 import Foundation
 import FirebaseAuth
 import FirebaseFirestore
 
-class NewItemViewViewModel : ObservableObject {
+class EditViewViewModel : ObservableObject {
     @Published var title = ""
     @Published var note = ""
     @Published var dueDate = Date()
-    @Published var showAlert = false 
-    init() {}
+    @Published var showAlert = false
     
-    func save() {
+    func save(userId:String) {
         guard canSave else {
             return
         }
@@ -53,6 +52,6 @@ class NewItemViewViewModel : ObservableObject {
         guard dueDate >= Date().addingTimeInterval(-86400) else {
             return false
         }
-        return true 
+        return true
     }
 }

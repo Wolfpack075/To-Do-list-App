@@ -45,6 +45,7 @@ struct ToDoListView: View {
                     Image(systemName: "plus")
                 }
             }
+            // switching window
             .sheet(isPresented: $viewModel.showingNewItemView){
                 NewItemView(newItemPresented: 
                                 $viewModel.showingNewItemView)

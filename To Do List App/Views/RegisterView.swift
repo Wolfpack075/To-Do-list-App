@@ -34,10 +34,16 @@ struct RegisterView: View {
                     //Attemp Registration
                     viewModel.register()
                 }
+                .alert(isPresented: $viewModel.showAlert) {
+                    Alert(title: Text("Error"), message: Text("Please fill in all fields, password must be at least 6 digits.")
+                    )
+                }
+                
             }
             .offset(y: -50)
             
             Spacer()
+            
         }
     }
 }
