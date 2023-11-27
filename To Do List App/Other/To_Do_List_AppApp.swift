@@ -19,6 +19,7 @@ struct To_Do_List_AppApp: App {
         WindowGroup {
             MainView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+        
         }
     }
 }

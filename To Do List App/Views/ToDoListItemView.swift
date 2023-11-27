@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ToDoListItemView: View {
     @StateObject var viewModel = ProfileViewViewModel()
-    @State var goEdit = false
+    
     let item : ToDoListItem
     var body: some View {
         HStack {
@@ -29,17 +29,39 @@ struct ToDoListItemView: View {
             
             Spacer()
             
-            Button {
-//                viewModel.toggleIsDone(item: item)
-                NavigationLink("Edit", destination: EditView(userId: item.id))
-            } label : {
-                Image(systemName: item.isDone ? "checkmark.circle.fill" : "circle")
-                    .foregroundColor(Color.blue)
+            HStack {
+                Spacer()
+                NavigationLink(destination: EditView(item:item)) {
+                    //SmallButton(label: "Edit")
+                }
             }
-            
+//
+//            Button {
+////                viewModel.toggleIsDone(item: item)
+//                goEdit = true
+//                //NavigationLink("Edit", destination: EditView(userId: $viewModel.Uid as? String ?? ""))
+//            } label : {
+//                Image(systemName: item.isDone ? "checkmark.circle.fill" : "circle")
+//                    .foregroundColor(Color.blue)
+//            }
+//            .sheet(isP
         }
     }
 }
+
+//struct SmallButton: View {
+//    var label: String
+//
+//    var body: some View {
+//        Button(action: {}) {
+//            Text(label)
+//                .foregroundColor(.white)
+//                .padding(8)
+//                .background(Color.blue)
+//                .cornerRadius(8)
+//        }
+//    }
+//}
 
 #Preview {
     ToDoListItemView(item: .init(

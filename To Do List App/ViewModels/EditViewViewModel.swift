@@ -10,12 +10,23 @@ import FirebaseAuth
 import FirebaseFirestore
 
 class EditViewViewModel : ObservableObject {
-    @Published var title = ""
-    @Published var note = ""
-    @Published var dueDate = Date()
+    @Published var id : String
+    @Published var title : String
+    @Published var note: String
+    @Published var dueDate : Date
+    @Published var Due : TimeInterval
     @Published var showAlert = false
+    @Published var showEditView = false 
     
-    func save(userId:String) {
+    init(item:ToDoListItem) {
+        self.id = item.id
+        self.title = item.title
+        self.note = item.note
+        self.Due = item.dueDate
+        self.dueDate = Date()
+    }
+    
+    func save() {
         guard canSave else {
             return
         }
@@ -26,9 +37,9 @@ class EditViewViewModel : ObservableObject {
         }
         
         // create a model
-        let newId = UUID().uuidString
+        //let newId = UUID().uuidString
         let newItem = ToDoListItem(
-            id: newId,
+            id: id,
             title: title,
             note: note,
             dueDate: dueDate.timeIntervalSince1970,
@@ -40,7 +51,7 @@ class EditViewViewModel : ObservableObject {
         db.collection("users")
             .document(uId)
             .collection("todos")
-            .document(newId)
+            .document(id)
             .setData(newItem.asDictionary())
         //
     }

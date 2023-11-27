@@ -27,6 +27,7 @@ class ProfileViewViewModel : ObservableObject {
             .setData(itemCopy.asDictionary())
     }
     @Published var user:User? = nil
+    @Published var Uid:String? = ""
     func fetchUser() {
         guard let userId = Auth.auth().currentUser?.uid else {
             return
@@ -36,7 +37,7 @@ class ProfileViewViewModel : ObservableObject {
             guard let data = snapshot?.data(), error == nil else {
                 return
             }
-            
+            self?.Uid = data["id"] as? String ?? ""
             DispatchQueue.main.async {
                 self?.user = User(
                     id: data["id"] as? String ?? "",
