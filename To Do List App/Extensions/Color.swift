@@ -1,8 +1,8 @@
 //
 //  Color.swift
-//  SwiftfulCrypto
+//  To Do List App
 //
-//  Created by Nick Sarno on 5/8/21.
+//  Created by Kazi Fahim Tahmid on 25/11/23.
 //
 
 import Foundation
