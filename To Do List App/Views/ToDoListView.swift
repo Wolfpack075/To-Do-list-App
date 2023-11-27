@@ -36,7 +36,7 @@ struct ToDoListView: View {
                 }
                 .listStyle(PlainListStyle())
             }
-            .navigationTitle("To Do List")
+            .navigationTitle("Notes")
             .toolbar {
                 Button {
                     // Action

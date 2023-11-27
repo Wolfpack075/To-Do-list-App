@@ -73,6 +73,8 @@
 		D22A3F9F2B144ADE00B30459 /* CoinImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22A3F9E2B144ADE00B30459 /* CoinImageView.swift */; };
 		D22A3FA12B144F3600B30459 /* CoinImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22A3FA02B144F3600B30459 /* CoinImageService.swift */; };
 		D22A3FA32B1450D000B30459 /* CoinImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22A3FA22B1450D000B30459 /* CoinImageViewModel.swift */; };
+		D290E43F2B15509200D869F5 /* LocalFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D290E43E2B15509200D869F5 /* LocalFileManager.swift */; };
+		D290E4432B15580A00D869F5 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D290E4422B15580A00D869F5 /* SearchBarView.swift */; };
 		D2E373A82AFFB2B100DD8DB0 /* To_Do_List_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E373A72AFFB2B100DD8DB0 /* To_Do_List_AppApp.swift */; };
 		D2E373AA2AFFB2B100DD8DB0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E373A92AFFB2B100DD8DB0 /* MainView.swift */; };
 		D2E373AF2AFFB2B400DD8DB0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2E373AE2AFFB2B400DD8DB0 /* Preview Assets.xcassets */; };
@@ -120,6 +122,8 @@
 		D22A3F9E2B144ADE00B30459 /* CoinImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageView.swift; sourceTree = "<group>"; };
 		D22A3FA02B144F3600B30459 /* CoinImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageService.swift; sourceTree = "<group>"; };
 		D22A3FA22B1450D000B30459 /* CoinImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageViewModel.swift; sourceTree = "<group>"; };
+		D290E43E2B15509200D869F5 /* LocalFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileManager.swift; sourceTree = "<group>"; };
+		D290E4422B15580A00D869F5 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		D2E373A42AFFB2B100DD8DB0 /* To Do List App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To Do List App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2E373A72AFFB2B100DD8DB0 /* To_Do_List_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = To_Do_List_AppApp.swift; sourceTree = "<group>"; };
 		D2E373A92AFFB2B100DD8DB0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -240,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				D22A3F8B2B1416C400B30459 /* CircleButtonView */,
+				D290E4422B15580A00D869F5 /* SearchBarView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -266,6 +271,7 @@
 			isa = PBXGroup;
 			children = (
 				D22A3F9C2B1445DE00B30459 /* NetworkingManager.swift */,
+				D290E43E2B15509200D869F5 /* LocalFileManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -423,6 +429,7 @@
 				D22A3F912B14223400B30459 /* CoinModel.swift in Sources */,
 				D22A3F842B140F1B00B30459 /* String.swift in Sources */,
 				D2073DFB2AFFEA1B00276049 /* ToDoListItem.swift in Sources */,
+				D290E4432B15580A00D869F5 /* SearchBarView.swift in Sources */,
 				D2073DEF2AFFE90400276049 /* ToDoListItemView.swift in Sources */,
 				D22A3F852B140F1B00B30459 /* Double.swift in Sources */,
 				D2073DF12AFFE92400276049 /* NewItemView.swift in Sources */,
@@ -457,6 +464,7 @@
 				D22A3F932B14243100B30459 /* CoinRowView.swift in Sources */,
 				D22A3FA12B144F3600B30459 /* CoinImageService.swift in Sources */,
 				D2073DF92AFFEA0B00276049 /* User.swift in Sources */,
+				D290E43F2B15509200D869F5 /* LocalFileManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,9 +598,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"To Do List App/Preview Content\"";
+				DEVELOPMENT_TEAM = TSKU9UJK99;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "To Do List";
+				INFOPLIST_KEY_CFBundleDisplayName = NotesApp;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -618,9 +627,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"To Do List App/Preview Content\"";
+				DEVELOPMENT_TEAM = TSKU9UJK99;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "To Do List";
+				INFOPLIST_KEY_CFBundleDisplayName = NotesApp;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

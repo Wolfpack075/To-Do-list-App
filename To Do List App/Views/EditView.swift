@@ -50,6 +50,9 @@ struct EditView: View {
                     .alert(isPresented: $viewModel.showEditView) {
                         Alert(title: Text("Notes"), message: Text("Your note has been saved."))
                     }
+                    Spacer()
+                    Spacer()
+                    Spacer()
                     
                 }
         }

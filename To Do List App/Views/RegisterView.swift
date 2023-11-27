@@ -13,7 +13,7 @@ struct RegisterView: View {
     var body: some View {
         VStack {
             // Header
-            HeaderView(title: "Register", subtitle: "Start Organizing todos", angle: -15, background: .orange)
+            HeaderView(title: "Register", subtitle: "Keep every thought saved", angle: -15, background: .orange)
             
             Form {
                 TextField("Full Name", text: $viewModel.name)

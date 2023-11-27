@@ -14,7 +14,7 @@ struct LoginView: View {
         NavigationView {
             VStack {
                 // Header
-                HeaderView(title: "Reminder", subtitle: "Way to be Organised", angle: 15, background: .pink)
+                HeaderView(title: "Notes", subtitle: "All thoughts count", angle: 15, background: .pink)
                 
                 // Login Form
                 Form {
