@@ -74,6 +74,7 @@
 		D22A3FA12B144F3600B30459 /* CoinImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22A3FA02B144F3600B30459 /* CoinImageService.swift */; };
 		D22A3FA32B1450D000B30459 /* CoinImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22A3FA22B1450D000B30459 /* CoinImageViewModel.swift */; };
 		D2764F332B1573F100BB284B /* StatisticModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2764F322B1573F100BB284B /* StatisticModel.swift */; };
+		D2764F352B1574B000BB284B /* StatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2764F342B1574B000BB284B /* StatisticView.swift */; };
 		D290E43F2B15509200D869F5 /* LocalFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D290E43E2B15509200D869F5 /* LocalFileManager.swift */; };
 		D290E4432B15580A00D869F5 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D290E4422B15580A00D869F5 /* SearchBarView.swift */; };
 		D2E373A82AFFB2B100DD8DB0 /* To_Do_List_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E373A72AFFB2B100DD8DB0 /* To_Do_List_AppApp.swift */; };
@@ -124,6 +125,7 @@
 		D22A3FA02B144F3600B30459 /* CoinImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageService.swift; sourceTree = "<group>"; };
 		D22A3FA22B1450D000B30459 /* CoinImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageViewModel.swift; sourceTree = "<group>"; };
 		D2764F322B1573F100BB284B /* StatisticModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticModel.swift; sourceTree = "<group>"; };
+		D2764F342B1574B000BB284B /* StatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticView.swift; sourceTree = "<group>"; };
 		D290E43E2B15509200D869F5 /* LocalFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileManager.swift; sourceTree = "<group>"; };
 		D290E4422B15580A00D869F5 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		D2E373A42AFFB2B100DD8DB0 /* To Do List App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To Do List App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -248,6 +250,7 @@
 			children = (
 				D22A3F8B2B1416C400B30459 /* CircleButtonView */,
 				D290E4422B15580A00D869F5 /* SearchBarView.swift */,
+				D2764F342B1574B000BB284B /* StatisticView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -441,6 +444,7 @@
 				D22A3F822B140F1B00B30459 /* Date.swift in Sources */,
 				D2073E032AFFEAC600276049 /* NewItemViewViewModel.swift in Sources */,
 				D22A3F782B135C6B00B30459 /* EditViewViewModel.swift in Sources */,
+				D2764F352B1574B000BB284B /* StatisticView.swift in Sources */,
 				D2073E052AFFEADD00276049 /* LoginViewViewModel.swift in Sources */,
 				D2073DF52AFFE9A100276049 /* ToDoListView.swift in Sources */,
 				D22430CA2B071B5800D44351 /* Extensions.swift in Sources */,
